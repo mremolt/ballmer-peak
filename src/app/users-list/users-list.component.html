@@ -1,0 +1,11 @@
+<h1>List of Users</h1>
+
+<mat-nav-list>
+  <a
+    mat-list-item
+    [routerLink]="['/', 'users', data.id]"
+    *ngFor="let data of u"
+  >
+    {{ data.name }}
+  </a>
+</mat-nav-list>
